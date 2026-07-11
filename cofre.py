@@ -2,20 +2,24 @@
 import random
 
 class Cofre:
-    """Clase Cofre: representa los cofres que se abren dependiendo de la calidad."""
+    """Clase Cofre: Modula las recompensas obtenidas en el juego."""
     
     def __init__(self, es_valida):
-        self.es_valida = es_valida
-        self.tipo, self.puntos = self._asignar_premio()
-
-    def _asignar_premio(self):
-        """Asigna cofres positivos si es válida o cofre maldito si es inválida."""
-        if not self.es_valida:
-            return "Maldito", -20
+        if es_valida:
+            # Probabilidades: 40% Común, 30% Raro, 20% Épico, 10% Legendario
+            opciones = ["Común", "Raro", "Épico", "Legendario"]
+            pesos = [40, 30, 20, 10]
+            self.tipo = random.choices(opciones, weights=pesos, k=1)[0]
+            
+            # Asignación de puntos según el tipo
+            if self.tipo == "Común":
+                self.puntos = 10
+            elif self.tipo == "Raro":
+                self.puntos = 25
+            elif self.tipo == "Épico":
+                self.puntos = 50
+            else:  # Legendario
+                self.puntos = 100
         else:
-            opciones = [
-                ("Común", 10),
-                ("Raro", 25),
-                ("Legendario", 50)
-            ]
-            return random.choice(opciones)
+            self.tipo = "Maldito"
+            self.puntos = -20
