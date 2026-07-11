@@ -8,10 +8,10 @@
 
 ---
 
-## 🕹️ Descripción del Proyecto
+##  Descripción del Proyecto
 El **Cazador de Contraseñas** es una aplicación de escritorio interactiva desarrollada bajo el paradigma de **Programación Orientada a Objetos (POO)**. El objetivo del juego es acumular la mayor cantidad de puntos abriendo cofres de recompensas, los cuales se desbloquean únicamente generando contraseñas seguras y válidas que cumplan con los criterios del sistema.
 
-### 🧩 Arquitectura del Software (Clases y Estructura)
+###  Arquitectura del Software (Clases y Estructura)
 El sistema está dividido modularmente para garantizar el cumplimiento de los pilares de la POO:
 1. **`Contrasena` (`contrasena.py`):** Encargada de encapsular la lógica de generación aleatoria (letras, números, caracteres especiales) y validación estricta de robustez.
 2. **`Cofre` (`cofre.py`):** Modula los tipos de cofres disponibles (Común, Épico, Legendario, Maldito) y asigna las puntuaciones correspondientes de manera dinámica.
@@ -21,7 +21,7 @@ El sistema está dividido modularmente para garantizar el cumplimiento de los pi
 
 ---
 
-## ⚠️ Control de Excepciones Personalizadas
+##  Control de Excepciones Personalizadas
 El programa implementa un control de errores robusto mediante ventanas emergentes de alerta (`messagebox.showerror`), capturando las siguientes excepciones de manera específica:
 
 * **`DatosNoNumericosError`:** Se dispara si el usuario ingresa letras, símbolos o deja vacío el campo de longitud.
@@ -32,7 +32,8 @@ El programa implementa un control de errores robusto mediante ventanas emergente
 
 ---
 
-## 🚀 Instrucciones de Ejecución
+## 
+ Instrucciones de Ejecución
 
 1. Asegúrate de tener instalado **Python 3.x** en tu sistema.
 2. Descarga o clona este repositorio en tu máquina local.
