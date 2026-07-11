@@ -1,4 +1,4 @@
-# 🏛️ Universidad Nacional Abierta y a Distancia (UNAD)
+#  Universidad Nacional Abierta y a Distancia (UNAD)
 ## Curso: Programación - Código: 213023_36
 ### Fase 5 - Entrega Proyecto de Software: Cazador de Contraseñas (Versión Tkinter)
 
