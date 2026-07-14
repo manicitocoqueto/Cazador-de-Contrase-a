@@ -11,7 +11,6 @@ class Cofre:
             pesos = [40, 30, 20, 10]
             self.tipo = random.choices(opciones, weights=pesos, k=1)[0]
             
-            # Asignación de puntos según el tipo
             if self.tipo == "Común":
                 self.puntos = 10
             elif self.tipo == "Raro":
